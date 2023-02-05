@@ -1,384 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="shortcut icon" href="images/crown.png"/>
-
-    <title>Kaybee Hotel</title>
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
-          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <linc:\Users\gerru\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\code\electron-sandbox\workbench\workbench.htmlk href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700" 
-          rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i"
-          rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css"/>
-
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <script type="module" src="./javascript/main.js" defer></script>
+    <title>Login / Register</title>
 </head>
+
 <body>
-    
-    <!--navbar-->
-    <div class="navbar">
 
-        <input type="checkbox" class="checkbox" id="click" hidden>
 
-        <div class="sidebar">
-            <label for="click">
-            <section class="menu-icon">
-                <div class="line line-1"></div>
-                <div class="line line-2"></div>
-                <div class="line line-3"></div>
-            </section>
-        </label>
-            <ul class="social-icon-list">
-                <li>
-                    <a href="#" class="social-link"> <i class="fab fa-facebook-f"></i> </a>
-                </li>
-                <li>
-                    <a href="#" class="social-link"> <i class="fab fa-twitter"></i> </a>
-                </li>
-                <li>
-                    <a href="#" class="social-link"> <i class="fab fa-google-plus-g"></i> </a>
-                </li>
-                <li>
-                    <a href="#" class="social-link"> <i class="fab fa-instagram"></i> </a>
-                </li>
-              
-            </ul>
+    <!-- Login / Register HTML Logic  -->
 
-         <div class="year">
-            <p>2023</p>
-         </div>
 
+
+    <div class="login-container">
+        <div id="main">
+            <h1>Sign In</h1>
+            <input id="email" type="email" placeholder="Email"></input>
+            <input id="password" type="password" placeholder="Password"></input>
+            <button id="submit">Login</button>
+            <p><span>or</span></p>
+            <button id="sign-up">Sign Up</button>
         </div>
-        <nav class="navigation">
-            <div class="navigation-header">
-                <h1 class="navigation-heading">Kaybee Hotel</h1>
 
-                <form class="navigation-seach">
 
-                    <input type="text" class="navigation-search-input"
-                    placeholder="Search...">
-                    <button class="navigation-search-btn">
-                        <i class="fas fa-search"></i>
-                    </button>
+        <div id="create-acct">
+            <h1>Create an Account</h1>
+            <input id="email-signup" type="text" placeholder="Email *"></input>
+            <input id="confirm-email-signup" type="email" placeholder="Confirm Email *"></input>
 
-                </form>
-            </div>
+            <input id="password-signup" type="password" placeholder="Password *"></input>
 
-            <ul class="navigation-list">
-                <li class="navigation-item">
-                    <a href=""class="navigation-link">home</a>
-                
-                </li>
-                <li class="navigation-item">
-                    <a href=""class="navigation-link">about us</a>
-                
-                </li>
-                <li class="navigation-item">
-                    <a href=""class="navigation-link">rooms</a>
-                
-                </li>
-                <li class="navigation-item">
-                    <a href=""class="navigation-link">events</a>
-                
-                </li>
-                <li class="navigation-item">
-                    <a href=""class="navigation-link">customers</a>
-                
-                </li>
-                <li class="navigation-item">
-                    <a href=""class="navigation-link">contact</a>
-                
-                </li>
-            </ul>
-
-            <div class="copyright">
-                <p>&copy; 2018. Kaybee Hotel. All Rights Reserved</p>
-            </div>
-        </nav>
-
+            <input id="confirm-password-signup" type="password" placeholder="Confirm Password *"></input>
+            <button id="create-acct-btn">Create Account</button>
+            <button id="return-btn">Return to Login</button>
+        </div>
     </div>
 
-    <header class="header">
-        <div class="brand">
-            <div>
-                <img src="images/crown.png" alt="crown" width="80">
-            </div>
-
-            <h3 class="hotel-heading">Kaybee Hotel</h3>
-        </div>
-
-        <div class="banner">
-            <h1 class="banner-heading">Welcome to Kaybee Hotel</h1>
-            <p class="banner-paragraph">Make your life luxurious</p>
-            <button class="banner-button">Check out</button>
-        </div>
-
-    </header>
-
-    <section class="about-us">
-
-        <div class="about-us-content">
-            <h1 class="about-us-heading">About Us</h1>
-            <div class="underline">
-                <div class="small-underline"></div>
-                <div class="big-underline"></div>
-            </div>
-            <h3 class="sub-heading">Kaybee Hotel</h3>
-            <p class="about-us-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Quos dolore inventore nisi ex natus iusto placeat,
-                  ducimus id repellendus corporis, ullam laudantium! 
-                  Alias ullam ipsa blanditiis.
-                 Ratione, perferendis et! Laudantium?</p>
-                 <button class="about-us-btn">
-                    Read More
-                    <i class="fas fa-angle-double-right btn-arrow"></i>
-                 </button>
-            
-        </div>
-
-        <div class="about-us-images">
-
-            <img src="images/about-us-img-1.jpeg" class="images image-1">
-            <img src="images/about-us-img-2.jpeg" class="images image-2">
-            <img src="images/about-us-img-3.jpeg" class="images image-3">
-            <img src="images/about-us-img-4.jpeg" class="images image-4">
-
-        </div>
-
-    </section>
-
-    <section class="rooms">
-        <div class="common-header">
-
-            <h1 class="common-heading">Rooms In Kaybee Hotel</h1>
-
-            <div class="underline">
-                <div class="small-underline"></div>
-                <div class="big-underline"></div>
-            </div>
-
-        </div>
 
 
 
-        <div class="rooms-cards-wrapper">
-            <div class="room-card">
-                <img src="images/single-room.jpeg" alt="single-room" class="room-img">
-                <div class="room-card-content">
-                    <h4 class="room-card-heading">single Room</h4>
-                    <p class="room-card-paragraph">Lorem ipsum dolor sit amet.</p>
-                    <p class="room-price" >R1199.00</p>
-                    <button class="room-card-btn">
-                        Book Now
-                         <i class="fas fa-angle-double-right btn-arrow"></i>
-                    </button>
-                </div>
-            </div>
-        
 
 
-
-      
-            <div class="room-card">
-                <img src="images/double-room.jpeg" alt="single-room" class="room-img">
-                <div class="room-card-content">
-                    <h4 class="room-card-heading">Double Room</h4>
-                    <p class="room-card-paragraph">Lorem ipsum dolor sit amet.</p>
-                    <p class="room-price" >R2499.00</p>
-                    <button class="room-card-btn">
-                        Book Now
-                         <i class="fas fa-angle-double-right btn-arrow"></i>
-                    </button>
-                </div>
-            </div>
-       
-
-
-
-     
-            <div class="room-card">
-                <img src="images/lux.jpeg" alt="single-room" class="room-img">
-                <div class="room-card-content">
-                    <h4 class="room-card-heading">luxury Room</h4>
-                    <p class="room-card-paragraph">Lorem ipsum dolor sit amet.</p>
-                    <p class="room-price">R5999.00</p>
-                    <button class="room-card-btn">
-                        Book Now
-                         <i class="fas fa-angle-double-right btn-arrow"></i>
-                    </button>
-                </div>
-            </div>
-        
-
-
-        
-       
-            <div class="room-card">
-                <img src="images/vip.jpeg" alt="single-room" class="room-img">
-                <div class="room-card-content">
-                    <h4 class="room-card-heading">Presidential suite </h4>
-                    <p class="room-card-paragraph">Lorem ipsum dolor sit amet.</p>
-                    <p class="room-price">R9099.00</p>
-                    <button class="room-card-btn">
-                        Book Now
-                         <i class="fas fa-angle-double-right btn-arrow"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="rooms-btn-wrapper">
-            <button class="rooms-btn" >Check All Rooms</button>
-        </div>
-    </section>
-
-    <section class="customers">
-
-    
-        <div class="common-header">
-            <h1 class="common-heading">Our Customers</h1>
-            <div class="underline">
-                <div class="small-underline"></div>
-                <div class="big-underline"></div>
-            </div>
-
-        </div>
-
-        <p class="customer-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            In iure asperiores totam debitis consequuntur consequatur numquam 
-            quia veritatis est blanditiis? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Aspernatur ipsum quaerat quis iure repudiandae repellat voluptatem 
-            voluptatibus illo explicabo commodi voluptate mollitia dolorum debitis,\
-             obcaecati facere dolore recusandae fugiat. Earum?</p>
-
-            <div class="customer-card-wrapper">
-
-                <div class="customer-card">
-                    <div class="customer-image-wrapper">
-                        <img src="images/customer-1.jpeg" alt="customer-1" class="customer-image">
-                    </div>
-                    
-               
-                    <div class="customer-info">
-                        <h3 class="customer-fullname">Moloto Mary</h3>
-                        <p class="customer-paragraph-1">Happy Customer</p>
-                        <p class="customer-paragraph-2">"Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Voluptatibus dolorem possimus quam reiciendis sint quod earum dignissimos 
-                            necessitatibus maxime exercitationem ea velit  praesentium quos error, 
-                            autem accusamus veniam! Ipsa, vitae?"</p>
-                    </div>
-                </div>
-
-                <div class="customer-card">
-                 
-                    <div class="customer-image-wrapper">
-                        <img  src="images/customer-2.jpeg" alt="customer-1" class="customer-image">
-                    </div>
-               
-                    <div class="customer-info">
-                        <h3 class="customer-fullname">Molepo Magda</h3>
-                        <p class="customer-paragraph-1">Happy Customer</p>
-                        <p class="customer-paragraph-2">"Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Voluptatibus dolorem possimus quam reiciendis sint quod earum dignissimos 
-                            necessitatibus maxime exercitationem ea velit  praesentium quos error, 
-                            autem accusamus veniam! Ipsa, vitae?"</p>
-                    </div>
-                </div>
-            </div>
-
-    </section>
-
-
-    <footer class="footer">
-        <div class="main-part">
-
-            <div class="footer-list-wrapper">
-                <h3 class="footer-heading">Kaybee Hotel</h3>
-                
-                <ul class="footer-list">
-                   <li class="footer-list-item"><a href="#" class="footer-list-link"> support@grandhotel.com</a></li>
-                   <li class="footer-list-item"><a href="#" class="footer-list-link"> Sandton City, Nain Street 123</a></li>
-                   <li class="footer-list-item"><a href="#" class="footer-list-link"> Tel: +123456789</a></li>
-                  
-                </ul>
-            </div>
-
-
-            <div class="footer-list-wrapper">
-                <h3 class="footer-heading">Explore</h3>
-                <ul class="footer-list">
-                   <li class="footer-list-item"><a href="#" class="footer-list-link"> Home</a></li>
-                   <li class="footer-list-item"><a href="#" class="footer-list-link"> About Us</a></li>
-                   <li class="footer-list-item"><a href="#" class="footer-list-link"> Rooms</a></li>
-                   <li class="footer-list-item"><a href="#" class="footer-list-link"> events</a></li>
-                   <li class="footer-list-item"><a href="#" class="footer-list-link"> Customer</a></li>
-                   <li class="footer-list-item"><a href="#" class="footer-list-link"> Contact</a></li>
-                </ul>
-            </div>
-
-
-            <div class="contact">
-                <h1 class="footer-heading">Contact</h1>
-                <p>Sign Up for News</p>
-                <form class="footer-form">
-                    <input type="text" class="footer-input" placeholder="Your Email....">
-                    <button class="footer-btn">Sign Up</button>
-                </form>
-            </div>
-
-            <div class="gallery">
-                <h1 class="footer-heading">Gallary</h1>
-                <div class="gallery-images">
-
-                    <div class="image-wrapper">
-                    <img src="images/gallery-img-1.jpeg" alt="gallary" class="footer-image">
-                    </div>
-                    
-                    <div class="image-wrapper">
-                    <img src="images/gallery-img-2.jpeg" alt="gallary" class="footer-image">
-                    </div>
-                    
-                    <div class="image-wrapper">
-                    <img src="images/gallery-img-3.jpeg" alt="gallary" class="footer-image">
-                    </div>
-                    
-                    <div class="image-wrapper">
-                    <img src="images/gallery-img-4.jpeg" alt="gallary" class="footer-image">
-                    </div>
-                    
-                    <div class="image-wrapper">
-                    <img src="images/gallery-img-5.jpeg" alt="gallary" class="footer-image">
-                    </div>
-                    
-                    <div class="image-wrapper">
-                    <img src="images/gallery-img-6.jpeg" alt="gallary" class="footer-image">
-                    </div>
-                    
-                </div>
-                
-            </div>
-            
-
-        </div>
-        <div class="creator-part">
-
-            <div class="copyright-text">
-                <p class="last-paragraph">copyright &copy; 2023. Kaybee Hotel. All Rights Reserved</p>
-            </div>
-        
-            <div class="text-right">
-                <p class="last-paragraph" >Made With <i class="fas fa-heart"></i> by <span>CodeAndCreate</span></p>
-            </div>
-        
-        </div>
-    </footer>
-
- 
 
 </body>
+
 </html>
