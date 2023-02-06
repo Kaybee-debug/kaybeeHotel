@@ -1,8 +1,13 @@
-
+body{
+  background:linear-gradient(to top,rgba(34,32,41,1),rgba(34,32,41,.8) ),
+     url("../images/nav-bg.jpeg") center no-repeat;
+    background-size: cover;
+  
+}
 h1 {
-    margin-bottom: 8%;
+    margin-bottom: 4%;
     text-align: center;
-    font-family: "Fredoka One", cursive;
+    font-family:'mantserrat',sans-serif;
     color: #01a2a8;
     letter-spacing: 0.1em;
   }
@@ -15,7 +20,7 @@ h1 {
     border-bottom: 1px solid #000;
     line-height: 0.1em;
   }
-  
+  z
   p span {
     background:#fff;
     padding:0 10px;
@@ -29,14 +34,24 @@ h1 {
     margin-bottom: 0;
   }
   
-  input, button {
+  input {
     padding: 3%;
+    width: 93%;
+    
+  }
+  button{
     width: 100%;
+    padding: 3%;
+    
   }
   
+  .login-container{
+    background-color: rgba(9,35,47,0.5);
+    max-width: 620px;
+    margin:25%;
+  }
   
-  
-  .login-container {
+  /* .login-container {
     background-color: white;
     padding: 7%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -44,10 +59,10 @@ h1 {
     margin: auto;
     height: 70vh;
     margin-top: 15vh;
-  }
+  } */
   
   #submit, #create-acct-btn {
-    background-color: #AB1449;
+    background-color: #deaa86;
     color: white;
     border: none;
     margin-top: 5%;
